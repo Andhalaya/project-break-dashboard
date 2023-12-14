@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="background-filter">
+    <header>
+        <div class="user"><i class='bx bxs-user-circle'></i>My Dashboard</div>
+        <nav class="nav-bar">
+            <ul>
+                <a href="./weather.html"><li><i class='bx bx-cloud-lightning'></i> Weather</li></a>
+                <a href="./password.html"><li><i class='bx bxs-key'></i> Password generator</li></a>
+                <a href="./clock.html"> <li><i class='bx bx-time-five'></i> Clock</li></a>
+                <a href="./links.html"><li><i class='bx bx-link' ></i> Links</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+
+        <div class="section1">
+            <div class="subsection">
+                <div class="clock">
+                    <div id="date"></div>
+                    <div id="location"></div>
+                    <div class="time">
+                        <span id="hours">00</span>
+                        <span>:</span>
+                        <span id="minutes">00</span>
+                        <span>:</span>
+                        <span id="seconds">00</span>
+                    </div>
+                </div>
+                <div class="password">
+                    <h3>Password Generator </h3>
+                    <div class="generator">
+                        <input type="number" value="12" id="passLength" max="50" min="12" placeholder="12">  
+                        <button id="button">Generate</button>
+                    </div>
+                    <div id="output" class="output"></div> 
+                </div>
+            </div>
+            <div class="current" id="current"></div>
+            <div id="forecast" class="forecast"></div>
+        </div>
+
+        <div class="section2">
+            <div class="links l">
+                <h3>Add your links to the list</h3>
+                <div class="form">
+                    <label for="linkName">Link Name:</label>
+                    <input type="text" id="linkName">
+                    <label for="url">URL:</label>
+                    <input type="text" id="url">
+                    <div class="buttons">
+                        <button class="button" id="addLink">Add link</button>
+                        <button class="reset" id="reset">Delete all</button>
+                    </div>
+                    
+                </div>
+                <ul id="linkList"></ul>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    </div>
+
+<script src="./js/script.js"></script>
+<script src="/js/password.js"></script>
+<script src="/js/weather.js"></script>
+<script src="/js/links.js"></script>
+<script src="./js/clock.js"></script>
+
+</body>
+</html>

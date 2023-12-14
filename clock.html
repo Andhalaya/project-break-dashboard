@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/clock.css">
+</head>
+<body>
+    <div class="background-filter">
+        <header>
+            <a href="/index.html"><div class="user"><i class='bx bxs-user-circle'></i><p>My Dashboard</p></div></a>
+            <nav class="nav-bar">
+                <ul>
+                    <a href="/weather.html"><li><i class='bx bx-cloud-lightning'></i> Weather</li></a>
+                    <a href="/password.html"><li><i class='bx bxs-key'></i> Password generator</li></a>
+                    <a href="/clock.html"> <li><i class='bx bx-time-five'></i> Clock</li></a>
+                    <a href="/links.html"><li><i class='bx bx-link' ></i> Links</li></a>
+                </ul>
+            </nav>
+        </header>
+        <div class="page c">
+            <div class="clock">
+                <div id="date"></div>
+                <div class="time">
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                </div>
+                <div id="message"></div>
+            </div>
+        </div>   
+    </div>   
+  
+    <script src="./js/script.js"></script>
+    <script src="/js/password.js"></script>
+    <script src="/js/weather.js"></script>
+    <script src="/js/links.js"></script>
+    <script src="./js/clock.js"></script>
+</body>
+</html>

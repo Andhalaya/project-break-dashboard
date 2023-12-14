@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fira+Mono:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    transition: background-image 0.5s ease-in-out;
+    background-size: cover;
+    height: 563px;
+    overflow: hidden;
+}
+
+.background-filter{
+    background: linear-gradient(#3b114669,#18498052);
+    height: 1000px;
+}
+
+/* <----- header -----> */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px 25px 25px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.nav-bar ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li:hover{
+    color: rgb(16, 15, 70);
+}
+
+.bx{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.user:hover{
+    background-color: rgba(221, 178, 221, 0.226);
+}
+
+.bxs-user-circle{
+    font-size: 50px;
+}
+
+/* <----sections----> */
+
+.content{
+    display: flex;
+    padding: 30px;
+    
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    margin-right: 30px ;
+    gap: 30px;
+}
+
+.section2{
+    padding: 0px 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.subsection{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* <----- clock -----> */
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: 140px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+span{
+    font-size: 50px
+}
+
+#date{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#hours, #minutes, #seconds{
+    font-size: 90px;
+    margin: 15px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #181818;
+    margin-top: 5px;
+}
+.location i{
+    color: #181818;
+}
+
+.c{
+    margin-top: 250px;
+}
+/* <-----weather-----> */
+
+.forecast{
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.forecast:hover{
+    overflow-x: scroll;
+}
+
+.current{
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+}
+
+.condition{
+    background-color: rgba(217, 217, 217, 0.13);
+    backdrop-filter: blur(10px);
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px;
+    text-align: center;
+    gap: 10px;
+}
+
+.temperature{
+    font-size: 40px;
+    font-weight: 400;
+}
+.condition p{
+    font-size: 25px;
+}
+
+.weather-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.13);
+    backdrop-filter: blur(10px);
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    width: 500px;
+    padding: 40px;
+}
+
+.weather-item1, .weather-item2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+}
+.weather-item2{align-items: end;}
+
+.forecast-display{
+    background-color: rgba(0, 0, 0, 0.36);
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 130px
+}
+
+.w{
+    width: 92%;
+}
+/* <------password-----> */
+
+.password{
+    background-color: rgba(217, 217, 217, 0.13);
+    backdrop-filter: blur(10px);
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px; 
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.generator{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+input{
+    color: #524E4E;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.output{
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    background-color: white;
+    color: #524E4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    background-color: #184880;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: #112a46;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* <------links-----> */
+
+.links{
+    background-color: rgba(217, 217, 217, 0.13);
+    backdrop-filter: blur(10px);
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    max-width: 350px;
+    max-height: 700px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.l{
+    width: 600px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+#linkList{
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+
+#linkList:hover{
+    overflow-y: scroll;
+}
+
+.linkItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1818186a;
+    border-radius: 10px;
+    padding: 5px 12px;
+}
+
+.closeBtn{
+    background-color: #938c8c;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+/* media */
+@media (max-width: 1280px){
+
+    *{
+        font-size: 15px;
+    }
+
+    .content{
+        padding: 0;
+    }
+    
+    .section1{
+        margin-right: 0px ;
+        gap: 0px;
+    }
+    
+    .subsection{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
+    
+    /* <----- clock -----> */
+    
+    .clock {
+        margin: 0;
+        padding: 0px;
+    }  
+    
+    span{
+        font-size: 40px
+    }
+    
+    #date{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    
+    #hours, #minutes, #seconds{
+        font-size: 60px;
+        margin: 15px;
+    }
+
+    /* <----password-----> */
+    
+    .password{
+        width: 290px;
+        height: 145px;
+        gap: 10px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    
+    button{
+        height: 30px;
+    }
+    
+    input{
+        height: 25px;
+    }
+    
+    .output{
+        width: 200px;
+        height: 50px;
+        padding: 0px;
+        overflow-x: scroll;
+    }
+
+    /* <-----weather------> */
+    
+    .condition{
+       padding: 0px;
+       gap: 0px;
+       padding: 10px;
+    }
+    
+    .temperature{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .condition p{
+        font-size: 18px;
+    }
+    .condition img{
+        width:50px;
+    }
+    
+    .weather-info{
+        padding: 20px;
+        width: 250px;
+    }
+    
+    .weather-item1, .weather-item2{
+        gap: 10px;
+    }
+
+    .forecast{
+        display: flex;
+        align-items: end;
+        margin-left: 29px;
+        margin-top: 20px;
+    }
+    
+    .forecast-display{
+        padding: 15px;
+    }
+
+    .location{
+        font-size: 15px;
+    }
+
+    .page{
+        gap: 50px;
+    }
+    
+    .c{
+        margin-top: 150px;
+    }
+    /* <------links-------> */
+    .links{
+        max-width: 250px;
+        max-height: 410px;
+        margin-bottom: 16px;
+    }
+}
