@@ -23,15 +23,18 @@
         <div class="page">
             <div class="links l">
                 <h3>Add your links to the list</h3>
-                <form action="">
+                <div class="form">
                     <label for="linkName">Link Name:</label>
-                    <input type="text" name="linkName" id="linkName">
+                    <input type="text" id="linkName">
                     <label for="url">URL:</label>
-                    <input type="text" name="url" id="url">
-                    <input type="submit" value="Add link">
-                </form>
-                <div class="linkList" id="linkList"></div>
-                
+                    <input type="text" id="url">
+                    <div class="buttons">
+                        <button class="button" id="addLink">Add link</button>
+                        <button class="reset" id="reset">Delete all</button>
+                    </div>
+                    
+                </div>
+                <ul id="linkList"></ul>
             </div>
         </div>
     </div>
