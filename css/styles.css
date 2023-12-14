@@ -297,18 +297,15 @@ button:hover{
     backdrop-filter: blur(10px);
     border: 1px solid #D1D1D1;
     border-radius: 20px;
-    max-width: 350px;
+    width: 350px;
     max-height: 700px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
+    padding: 30px;
+    margin-left: 10px;
     text-align: center;
-}
-
-.l{
-    width: 600px;
 }
 
 .form{
@@ -317,9 +314,15 @@ button:hover{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
+}
+
+.form input{
+    padding: 5px;
 }
 
 .buttons{
+    padding: 20px;
     display: flex;
     gap: 10px;
 }
@@ -478,8 +481,15 @@ button:hover{
     }
     /* <------links-------> */
     .links{
-        max-width: 250px;
+        max-width: 240px;
         max-height: 410px;
         margin-bottom: 16px;
+        margin-left: 0px;
+    }
+
+    .buttons button{
+        width: 110px;
+        display: flex;
+        justify-content: center;
     }
 }
