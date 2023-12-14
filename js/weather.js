@@ -1,5 +1,5 @@
 const apiKey = 'ac3c86948cc243dfa6795416230712';
-const city = 'oviedo';
+const city = 'madrid';
 const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=no&alerts=no`;
 
 async function getWeather() {
